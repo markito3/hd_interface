@@ -25,7 +25,7 @@ using namespace std;
 #define QuietNaN std::numeric_limits<double>::quiet_NaN()
 
 struct StepStruct {DReferenceTrajectory::swim_step_t steps[256];};
-
+thread_local shared_ptr<DResourcePool<TMatrixFSym>> DReferenceTrajectory::dResourcePool_TMatrixFSym;
 //---------------------------------
 // DReferenceTrajectory    (Constructor)
 //---------------------------------
