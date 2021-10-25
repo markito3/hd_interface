@@ -1,3 +1,5 @@
 *~
 build
 lib
+.clone_done
+hd_interface_prereqs_version.xml
