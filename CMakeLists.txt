@@ -23,7 +23,7 @@ add_library(HD_INTERFACE STATIC ${SOURCES} ${DERIVED_SOURCES})
 include_directories(${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR}/include/HDDM $ENV{ROOTSYS}/include $ENV{JANA_HOME}/include $ENV{HDDM_HOME}/include $ENV{XERCES_INCLUDE} $ENV{HDDS_HOME}/$ENV{BMS_OSNAME}/src $ENV{CCDB_HOME}/include /usr/include/tirpc)
 target_compile_options(
   HD_INTERFACE
-  PUBLIC -fPIC -pthread -m64
+  PUBLIC -DHAVE_CCDB -fPIC -pthread -m64
   )
 add_dependencies(HD_INTERFACE hddm_derived_sources)
 install(
