@@ -9,6 +9,7 @@
 
 #include "DANA/DFactoryGenerator.h"
 
+/*
 extern jerror_t BCAL_init(JEventLoop *loop);
 extern jerror_t CDC_init(JEventLoop *loop);
 extern jerror_t FDC_init(JEventLoop *loop);
@@ -33,6 +34,7 @@ extern jerror_t FMWPC_init(JEventLoop *loop);
 extern jerror_t EVENTSTORE_init(JEventLoop *loop);
 extern jerror_t TAC_init(JEventLoop *loop);
 extern jerror_t TRD_init(JEventLoop *loop);
+*/
 
 //---------------------------------
 // DFactoryGenerator    (Constructor)
@@ -55,6 +57,7 @@ DFactoryGenerator::~DFactoryGenerator()
 //---------------------------------
 jerror_t DFactoryGenerator::GenerateFactories(JEventLoop *loop)
 {
+  /*
 	BCAL_init(loop);
 	CDC_init(loop);
 	FDC_init(loop);
@@ -79,6 +82,7 @@ jerror_t DFactoryGenerator::GenerateFactories(JEventLoop *loop)
 	EVENTSTORE_init(loop);
 	TAC_init(loop);
 	TRD_init(loop);	
+  */
 
 	return NOERROR;
 }
